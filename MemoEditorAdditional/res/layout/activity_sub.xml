@@ -8,15 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.memoeditoradditional.SubActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="42dp"
-        android:text="@string/hello_world" />
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -24,5 +15,17 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:text="back" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="18dp"
+        android:ems="30" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

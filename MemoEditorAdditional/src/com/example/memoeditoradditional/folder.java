@@ -5,6 +5,20 @@ import java.util.Scanner;
 
 
 public class folder {
+	 public static void main(){
+			FileName();
+		}
+	
+	 public static void FileName(){
+		 String title = null;
+		 if(title == null){
+		    System.out.println("タイトルを入力してください。");
+		    	Scanner scan = new Scanner(System.in);
+		    	title =  scan.next();
+		    	CreateFile(title);
+		 }
+	 }
+
 	
 	
 	 public static void CreateFile(String test){
@@ -22,4 +36,5 @@ public class folder {
 			 System.out.println(e);			 
 			 }
 		 }
+	
 }
